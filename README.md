@@ -1,23 +1,29 @@
-# Obsidian Official CLI Skill
+# Obsidian **Official CLI** Skill
 
-An OpenClaw skill for working with Obsidian vaults using the official Obsidian CLI (v1.12+).
+An OpenClaw skill for working with Obsidian vaults using the **official Obsidian CLI (v1.12+)** - not third-party tools, but Obsidian's own built-in command-line interface with full feature support.
 
-## ✨ Features
+## ✨ Official CLI Features
 
-- **File Operations**: Create, read, edit, move, and delete notes from the terminal
-- **Search & Discovery**: Full-text search, tag management, link analysis
-- **Daily Notes & Tasks**: Manage daily notes and task lists via CLI
-- **Templates & Bookmarks**: Work with templates and bookmark management
-- **Plugin Management**: Install, enable, disable, and reload plugins
-- **Sync & History**: Obsidian Sync operations and file version control
-- **Developer Tools**: Console debugging, DOM inspection, screenshots
-- **TUI Mode**: Interactive terminal UI with autocomplete and history
+**This skill uses Obsidian's official CLI** - not third-party integrations - giving you access to **all Obsidian features** from the terminal:
+
+- **File Operations**: Create, read, edit, move, and delete notes with full Obsidian integration
+- **Advanced Task Management**: Complete task operations with checkboxes, statuses, and custom markers  
+- **Database/Bases Support**: Query and manage Obsidian Bases with views and CSV/JSON export
+- **Search & Discovery**: Full-text search, tag management, link analysis with Obsidian's search engine
+- **Daily Notes & Templates**: Manage daily notes and insert templates with variable resolution
+- **Plugin & Theme Management**: Install, enable, disable, and reload plugins/themes directly
+- **Obsidian Sync Integration**: Full sync operations, history, and conflict resolution
+- **Properties (Frontmatter)**: Read, write, and manage note properties with type validation
+- **Workspace Management**: Control layouts, tabs, and saved workspaces
+- **Developer Tools**: Console debugging, DOM inspection, screenshots, mobile emulation
+- **TUI Mode**: Interactive terminal UI with autocomplete, history, and command palette access
 
 ## 📋 Requirements
 
-- **Obsidian 1.12+** with early access
-- **Catalyst license** (required for CLI access)
-- **CLI enabled** in Obsidian settings: Settings → General → Command line interface → Enable
+- **Obsidian 1.12+** with early access (insider builds)
+- **Catalyst license** (required for official CLI access)
+- **Official CLI enabled** in Obsidian: Settings → General → Command line interface → Enable
+- **Obsidian running** (CLI connects to the live Obsidian app for full feature access)
 
 ## 🚀 Installation
 
@@ -31,11 +37,13 @@ An OpenClaw skill for working with Obsidian vaults using the official Obsidian C
 
 Once installed, the skill will automatically trigger when you mention Obsidian operations:
 
-- "Create a new note called 'Meeting Notes' in my Obsidian vault"
-- "Search for all notes containing 'project' in my vault"
-- "Show me all incomplete tasks in my daily note"
-- "List all plugins installed in Obsidian"
+- "Create a new note called 'Meeting Notes' using Obsidian CLI"
+- "Search for all notes containing 'project' with Obsidian's search engine"
+- "Show me all incomplete tasks and toggle their status via CLI"
+- "Query my Books database and export to CSV"
+- "Install the Dataview plugin and enable it"
 - "Take a screenshot of my current Obsidian workspace"
+- "Show me all orphaned notes in my vault graph"
 
 ## 🛠️ Obsidian CLI Setup
 
@@ -47,38 +55,38 @@ Once installed, the skill will automatically trigger when you mention Obsidian o
 
 **Note**: Obsidian must be running for CLI commands to work.
 
-## 🔧 Supported Commands
+## 🔧 Official CLI Command Coverage
 
-The skill covers the complete Obsidian CLI command set:
+**Complete access to Obsidian's official CLI** - every command from the native interface:
 
-### File Management
-- Create, read, edit notes
-- Move, rename, delete files
-- Folder operations
+### File & Vault Management
+- Native file operations with Obsidian's file resolver
+- Folder management and vault organization
+- Random note selection and unique name generation
 
-### Content Operations  
-- Search with filters and context
-- Daily notes management
-- Task list operations
-- Property (frontmatter) management
+### Advanced Content Features
+- **Task Management**: Toggle, update status, custom markers (`todo`, `done`, `[-]`)
+- **Properties**: Full frontmatter support with type validation (`list`, `text`, etc.)
+- **Templates**: Insert with variable resolution and custom paths
+- **Daily Notes**: Dedicated commands with append/prepend support
 
-### Vault Analysis
-- Backlinks and outgoing links
-- Orphaned notes detection
-- Broken link identification
-- Tag analysis
+### Database/Knowledge Features
+- **Obsidian Bases**: Query views, export CSV/JSON, create entries
+- **Search Engine**: Obsidian's full-text search with context and filters  
+- **Link Graph**: Backlinks, orphans, deadends via Obsidian's link resolver
+- **Tag System**: Complete tag analysis with occurrence counts
 
-### Workspace & Plugins
-- Plugin installation and management
-- Theme and CSS snippet control
-- Workspace layout management
-- Command palette access
+### Obsidian Ecosystem Integration
+- **Plugin Lifecycle**: Install, enable, disable, reload with Obsidian's plugin manager
+- **Theme Engine**: Access to Obsidian's theme system and CSS snippets
+- **Sync Service**: Full Obsidian Sync operations, not file-level sync
+- **Workspace System**: Save/load layouts, tab management, pane control
 
-### Advanced Features
-- Obsidian Sync operations
-- File history and versioning
-- Developer tools and debugging
-- Mobile device emulation
+### Developer & Power User Features
+- **Console Access**: Direct access to Obsidian's developer console
+- **DOM Inspection**: Query Obsidian's UI elements and CSS
+- **Command Palette**: Execute any registered Obsidian command by ID
+- **Mobile Emulation**: Test mobile layouts and responsive behavior
 
 ## 🎮 TUI Mode
 
