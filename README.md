@@ -105,14 +105,44 @@ The skill includes comprehensive documentation covering:
 - Platform-specific setup instructions
 - Troubleshooting guides
 
+## 📁 Repository Structure
+
+```
+obsidian-official-cli-skill/
+├── SKILL.md                        # Main skill source code
+├── obsidian-official-cli.skill     # Packaged skill file  
+├── README.md                       # This documentation
+├── LICENSE                         # MIT license
+├── CHANGELOG.md                    # Version history
+└── .gitignore                      # Git ignore rules
+```
+
+## 🚀 Installation
+
+Download the skill file from the [releases page](https://github.com/slmoloch/obsidian-official-cli-skill/releases) and install:
+
+```bash
+# Download the .skill file from releases, then:
+openclaw skills install obsidian-official-cli.skill
+```
+
+## 🛠️ Development
+
+**For Developers:**
+- `SKILL.md` contains the complete skill implementation
+- Edit `SKILL.md` to modify functionality  
+- Rebuild with `openclaw skills build` after changes
+- Test locally before submitting changes
+
 ## 🤝 Contributing
 
 Found an issue or want to improve the skill? 
 
 1. Open an issue describing the problem/enhancement
 2. Fork the repository
-3. Make your changes to the skill
-4. Submit a pull request
+3. Make your changes to `SKILL.md`
+4. Test your changes locally
+5. Submit a pull request
 
 ## 📄 License
 
